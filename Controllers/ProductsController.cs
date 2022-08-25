@@ -21,7 +21,7 @@ namespace E_CommenceAPI.Controllers
             }
             catch(Exception)
             {
-                return Ok(401);
+                return Ok(new { Message = "Can't return product list." });
             }
         }
     }
