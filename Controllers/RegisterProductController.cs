@@ -34,7 +34,7 @@ namespace E_CommenceAPI.Controllers
             }
             catch (Exception)
             {
-                throw;
+                return Ok();
             }
         }
     }

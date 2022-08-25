@@ -30,9 +30,9 @@ namespace E_CommenceAPI.Controllers
                     throw new Exception("Please provide the correct username and password!");
                 return Ok(new ResponseObject { StatusCode = 200, Message = userId.ToString() });
             }
-            catch(Exception)
+            catch(Exception ex)
             {
-                return Ok(new ResponseObject { StatusCode = 401, Message = "" });
+                return Ok(new ResponseObject { StatusCode = 401, Message = ex.Message });
             }
         }
 
