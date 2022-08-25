@@ -32,7 +32,7 @@ namespace E_CommenceAPI.Controllers
             }
             catch(Exception)
             {
-                throw;
+                return Ok(new ResponseObject { StatusCode = 401, Message = "" });
             }
         }
 
